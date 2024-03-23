@@ -1,0 +1,10 @@
+import csv
+f=open("student.csv","a",newline="")
+a=csv.writer(f)
+a.writerow(["studentID","rollno","name","mobilenum"])
+studentid=int(input('Enter the studentID'))
+rollno=int(input("Enter the rollno"))
+name=input("Enter the name")
+mobilenum=int(input("Enter the mobilenum"))
+a.writerow([studentid,rollno,name,mobilenum])
+print("student record has save")
